@@ -1,32 +1,39 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="font-weight-medium display-3">Photoshare 2</div>
+      <v-spacer></v-spacer>
+   
+      <v-text-field light="true" height="30" placeholder="search" class="mt-5" background-color="grey lighten-1" rounded ></v-text-field>
+     
+      <v-btn color="light-blue" class="ml-3">Home</v-btn>
+      
+      <v-btn color="light-blue" class="ml-3">Search</v-btn>
+      <v-btn color="light-blue" class="ml-3">Sign In/Out</v-btn>
+      <v-btn color="light-blue" class="ml-3">Post</v-btn>
+    </v-app-bar>
+
+    <v-main>
+   
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: 'App',
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+  
+  },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
