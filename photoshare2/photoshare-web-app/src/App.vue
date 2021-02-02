@@ -18,18 +18,18 @@
     </v-app-bar>
 
     <v-main>
-   
+      <card class="mt-5"></card>
     </v-main>
   </v-app>
 </template>
 
 <script>
-
+import card from "./components/Card"
 export default {
   name: 'App',
 
   components: {
-  
+    card
   },
 
   data: () => ({
